@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Nexypn Blog – Centro de conocimiento profesional sobre tecnología y criptomonedas</title>
+    <meta name="description" content="Descubre artículos profesionales, análisis detallados y guías completas sobre tecnología, blockchain y criptomonedas en Nexypn. Navega fácilmente por nuestro contenido especializado.">
+    <meta name="keywords" content="nexypn, tecnología, criptomonedas, blockchain, análisis, guías profesionales">
+    
+    <meta property="og:title" content="Nexypn Blog – Centro de conocimiento profesional">
+    <meta property="og:description" content="Descubre artículos profesionales y análisis detallados sobre tecnología y criptomonedas en Nexypn.">
+    
+    <meta name="twitter:title" content="Nexypn Blog – Centro de conocimiento profesional">
+    <meta name="twitter:description" content="Descubre artículos profesionales y análisis detallados sobre tecnología y criptomonedas en Nexypn.">
+
+   
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #f97316;
+            --secondary-color: #1f2937;
+            --accent-color: #059669;
+            --background-color: #ffffff;
+            --surface-color: #f9fafb;
+            --text-primary: #111827;
+            --text-secondary: #6b7280;
+            --border-color: #e5e7eb;
+        }
+        
+        .dark {
+            --background-color: #000000;
+            --surface-color: #0b0b0b;
+            --text-primary: #ffffff;
+            --text-secondary: #9ca3af;
+            --border-color: #374151;
+        }
+    }
+
+    @layer base {
+        body {
+            background-color: var(--background-color);
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+        
+        .dark-mode {
+            background-color: var(--background-color);
+            color: var(--text-primary);
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply px-6 py-2 rounded-lg font-medium transition-all duration-200;
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+        }
+        
+        .card {
+            @apply rounded-lg shadow-sm border transition-all duration-200;
+            background-color: var(--surface-color);
+            border-color: var(--border-color);
+        }
+        
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    @layer utilities {
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    }
+    </style>
+    <script>if (localStorage.getItem('darkMode') === 'true') { document.body.classList.add('dark'); } const _lang=localStorage.getItem('currentLanguage'); if(_lang){ document.documentElement.lang=_lang; document.documentElement.dir = _lang === 'ar' ? 'rtl' : 'ltr'; }</script>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/HeroSection.js"></script>
+    <script type="text/babel" src="components/CategoryTabs.js"></script>
+    <script type="text/babel" src="components/BlogCard.js"></script>
+    <script type="text/babel" src="components/BlogGrid.js"></script>
+    <script type="text/babel" src="components/AboutSection.js"></script>
+    <script type="text/babel" src="components/SecurePlatformsSection.js"></script>
+    <script type="text/babel" src="components/FaqSection.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>

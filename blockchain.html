@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Blockchain - Tecnología Revolucionaria | Nexypn</title>
+    <meta name="description" content="Aprende todo sobre blockchain: conceptos básicos, aplicaciones, smart contracts y el futuro de la tecnología distribuida.">
+    <meta name="keywords" content="blockchain, tecnología distribuida, smart contracts, DeFi, nexypn">
+
+    
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #f97316;
+            --secondary-color: #1f2937;
+            --accent-color: #059669;
+            --background-color: #ffffff;
+            --surface-color: #f9fafb;
+            --text-primary: #111827;
+            --text-secondary: #6b7280;
+            --border-color: #e5e7eb;
+        }
+        
+        .dark {
+            --background-color: #000000;
+            --surface-color: #0b0b0b;
+            --text-primary: #ffffff;
+            --text-secondary: #9ca3af;
+            --border-color: #374151;
+        }
+    }
+
+    @layer base {
+        body {
+            background-color: var(--background-color);
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+    }
+    </style>
+    <script>if (localStorage.getItem('darkMode') === 'true') { document.body.classList.add('dark'); }</script>
+    <script>const _lang=localStorage.getItem('currentLanguage'); if(_lang){ document.documentElement.lang=_lang; document.documentElement.dir = _lang === 'ar' ? 'rtl' : 'ltr'; }</script>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="blockchain-app.js"></script>
+</body>
+</html>
