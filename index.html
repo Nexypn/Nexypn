@@ -98,7 +98,13 @@
 </head>
 <body>
     <div id="root"></div>
-    
+    <script type="text/javascript">
+    var uid = '495819';
+    var wid = '747133';
+    var pop_fback = 'up';
+    var pop_tag = document.createElement('script');pop_tag.src='//cdn.popcash.net/show.js';document.body.appendChild(pop_tag);
+    pop_tag.onerror = function() {pop_tag = document.createElement('script');pop_tag.src='//cdn2.popcash.net/show.js';document.body.appendChild(pop_tag)};
+    </script>
     <script type="text/babel" src="components/Header.js"></script>
     <script type="text/babel" src="components/HeroSection.js"></script>
     <script type="text/babel" src="components/CategoryTabs.js"></script>
@@ -108,7 +114,7 @@
     <script type="text/babel" src="components/SecurePlatformsSection.js"></script>
     <script type="text/babel" src="components/FaqSection.js"></script>
     <script type="text/babel" src="components/Footer.js"></script>
-    <script> window.location.href="http://p.npcad.com/go/495819/747133"; </script>
+    
     <script type="text/babel" src="app.js"></script>
 </body>
 </html>
